@@ -20,7 +20,7 @@
     [[UINavigationBar appearance] setBarTintColor:tintColor];
     [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
     [[UINavigationBar appearance] setTitleTextAttributes:@{
-                                                           NSFontAttributeName: [self mediumFontWithSize:18],
+                                                           NSFontAttributeName: [self fontWithSize:18],
                                                            NSForegroundColorAttributeName: [UIColor whiteColor]}];
     [[UIBarButtonItem appearance] setTitleTextAttributes:@{
                                                            NSFontAttributeName: [self fontWithSize:16]} forState:UIControlStateNormal];
@@ -28,12 +28,7 @@
 
 + (UIFont *)fontWithSize:(CGFloat)size
 {
-    return [UIFont fontWithName:@"STHeitiSC-Light" size:size];
-}
-
-+ (UIFont *)mediumFontWithSize:(CGFloat)size
-{
-    return [UIFont fontWithName:@"STHeitiSC-Medium" size:size];
+    return [UIFont fontWithName:@"TrebuchetMS" size:size];
 }
 
 + (UILabel *)labelForTitleView
