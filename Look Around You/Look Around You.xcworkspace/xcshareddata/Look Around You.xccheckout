@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>FB62CBD8-211F-433F-AC74-408ED57550F0</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Look Around You</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>5A316226-EB9F-4B94-BC6F-BEBD53A5E309</key>
+		<string>ssh://github.com/devfort/lookaroundyou-ios.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Look Around You/Look Around You.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>5A316226-EB9F-4B94-BC6F-BEBD53A5E309</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/devfort/lookaroundyou-ios.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>5A316226-EB9F-4B94-BC6F-BEBD53A5E309</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>5A316226-EB9F-4B94-BC6F-BEBD53A5E309</string>
+			<key>IDESourceControlWCCName</key>
+			<string>look-around-you-ios</string>
+		</dict>
+	</array>
+</dict>
+</plist>
