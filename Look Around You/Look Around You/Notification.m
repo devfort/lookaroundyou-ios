@@ -17,9 +17,14 @@
     notification.title = json[@"title"];
     notification.body = json[@"body"];
     notification.date = [[DVFRFC8601DateFormatter shared] dateFromString:json[@"created_at"]];
-//    CLLocationDegrees latitude = [json[@"location"][@"latitude"] floatValue];
-//    CLLocationDegrees longitude = [json[@"location"][@"longitude"] floatValue];
-//    notification.location = CLLocationCoordinate2DMake(latitude, longitude);
+    if (json[@"location"]) {
+        CLLocationDegrees latitude = [json[@"location"][@"latitude"] floatValue];
+        CLLocationDegrees longitude = [json[@"location"][@"longitude"] floatValue];
+        notification.location = CLLocationCoordinate2DMake(latitude, longitude);
+    }
+    else {
+        notification.location = kCLLocationCoordinate2DInvalid;
+    }
     return notification;
 }
 

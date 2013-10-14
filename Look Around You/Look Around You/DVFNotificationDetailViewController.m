@@ -29,6 +29,10 @@
     [super viewDidLoad];
     self.titleLabel.text = self.notification.title;
     self.bodyLabel.text = self.notification.body;
+    
+    if (CLLocationCoordinate2DIsValid(self.notification.location)) {
+        self.mapView.centerCoordinate = self.notification.location;
+    }
 }
 
 @end

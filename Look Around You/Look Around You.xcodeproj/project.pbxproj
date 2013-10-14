@@ -135,15 +135,6 @@
 			name = Views;
 			sourceTree = "<group>";
 		};
-		28517205180C857C00919322 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				2805CFB818074F3B00BCD74A /* Person.h */,
-				2805CFB918074F3B00BCD74A /* Person.m */,
-			);
-			name = Model;
-			sourceTree = "<group>";
-		};
 		28517209180C865900919322 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
@@ -213,7 +204,6 @@
 				2805CFBB1807510900BCD74A /* DVFStyle.h */,
 				2805CFBC1807510900BCD74A /* DVFStyle.m */,
 				28517209180C865900919322 /* Categories */,
-				28517205180C857C00919322 /* Model */,
 				28517204180C857400919322 /* Views */,
 				28FA80C5180407380061AAFA /* Model */,
 				28F561371802EB6A00288DDA /* Images.xcassets */,
@@ -256,6 +246,8 @@
 			children = (
 				28F561541802F1AF00288DDA /* Notification.h */,
 				28F561551802F1AF00288DDA /* Notification.m */,
+				2805CFB818074F3B00BCD74A /* Person.h */,
+				2805CFB918074F3B00BCD74A /* Person.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
