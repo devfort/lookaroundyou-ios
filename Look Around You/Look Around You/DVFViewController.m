@@ -12,6 +12,7 @@
 #import "Person.h"
 #import "DVFStyle.h"
 #import "DVFConstants.h"
+#import "DVFNotificationTableViewCell.h"
 
 @interface DVFViewController ()
 @property (nonatomic, strong) NSArray *notifications;
@@ -29,6 +30,8 @@
     return self;
 }
 
+static NSString *CellIdentifier = @"Cell";
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -42,6 +45,10 @@
     self.navigationItem.leftBarButtonItem = settingsButton;
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(didReceiveRemoteNotification:) name:DVFReceivedNotificationKey object:nil];
+    
+    [self.tableView registerNib:[UINib nibWithNibName:@"DVFNotificationTableViewCell"
+                                               bundle:[NSBundle mainBundle]]
+                               forCellReuseIdentifier:CellIdentifier];
 }
 
 - (void)fetchNotificationsFromAPI
@@ -62,6 +69,7 @@
         NSLog(@"Error: %@", error);
         NSLog(@"%@", task.response);
     }];
+    self.notifications = @[[Notification notificationFromJSON:@{@"body": @"Thing thats happening", @"created_at": @"2013-09-29T10:40:15.765"}]];
 }
 
 - (void)didReceiveRemoteNotification:(NSNotification *)notification
@@ -90,21 +98,25 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *CellIdentifier = @"Cell";
-
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-    if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1
-                                      reuseIdentifier:CellIdentifier];
-        cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
-    }
+    DVFNotificationTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     
     Notification *notification = self.notifications[indexPath.row];
-    cell.textLabel.text = notification.body;
-    cell.detailTextLabel.text = [[self dateFormatter] stringFromDate:notification.date];
-    cell.textLabel.font = [DVFStyle fontWithSize:14];
-    cell.detailTextLabel.font = [DVFStyle fontWithSize:12];
+    cell.titleLabel.text = notification.body;
+    cell.dateLabel.text = [[self dateFormatter] stringFromDate:notification.date];
     return cell;
+}
+
+#pragma mark - UITableViewDelegate
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    //
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 90;
 }
 
 #pragma mark - Buttons

@@ -10,6 +10,8 @@
 		2805CFB718074BCD00BCD74A /* DVFRFC8601DateFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2805CFB618074BCD00BCD74A /* DVFRFC8601DateFormatter.m */; };
 		2805CFBA18074F3B00BCD74A /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 2805CFB918074F3B00BCD74A /* Person.m */; };
 		2805CFBD1807510900BCD74A /* DVFStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 2805CFBC1807510900BCD74A /* DVFStyle.m */; };
+		285171F9180C7EC600919322 /* DVFNotificationTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 285171F8180C7EC600919322 /* DVFNotificationTableViewCell.m */; };
+		285171FB180C7EF200919322 /* DVFNotificationTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 285171FA180C7EF200919322 /* DVFNotificationTableViewCell.xib */; };
 		288EFE3C180334F600593F2E /* DVFConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 288EFE3B180334F600593F2E /* DVFConstants.m */; };
 		28F5611D1802EB6900288DDA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28F5611C1802EB6900288DDA /* Foundation.framework */; };
 		28F5611F1802EB6900288DDA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28F5611E1802EB6900288DDA /* CoreGraphics.framework */; };
@@ -47,6 +49,9 @@
 		2805CFB918074F3B00BCD74A /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 		2805CFBB1807510900BCD74A /* DVFStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVFStyle.h; sourceTree = "<group>"; };
 		2805CFBC1807510900BCD74A /* DVFStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DVFStyle.m; sourceTree = "<group>"; };
+		285171F7180C7EC600919322 /* DVFNotificationTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVFNotificationTableViewCell.h; sourceTree = "<group>"; };
+		285171F8180C7EC600919322 /* DVFNotificationTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DVFNotificationTableViewCell.m; sourceTree = "<group>"; };
+		285171FA180C7EF200919322 /* DVFNotificationTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DVFNotificationTableViewCell.xib; sourceTree = "<group>"; };
 		288EFE3A180334F600593F2E /* DVFConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVFConstants.h; sourceTree = "<group>"; };
 		288EFE3B180334F600593F2E /* DVFConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DVFConstants.m; sourceTree = "<group>"; };
 		28F561191802EB6900288DDA /* Look Around You.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Look Around You.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -145,6 +150,9 @@
 				2805CFB618074BCD00BCD74A /* DVFRFC8601DateFormatter.m */,
 				28F561341802EB6A00288DDA /* DVFViewController.h */,
 				28F561351802EB6A00288DDA /* DVFViewController.m */,
+				285171F7180C7EC600919322 /* DVFNotificationTableViewCell.h */,
+				285171F8180C7EC600919322 /* DVFNotificationTableViewCell.m */,
+				285171FA180C7EF200919322 /* DVFNotificationTableViewCell.xib */,
 				28FA80C2180374280061AAFA /* DVFLookAroundYouAPIClient.h */,
 				28FA80C3180374280061AAFA /* DVFLookAroundYouAPIClient.m */,
 				28FA80C6180407480061AAFA /* DVFLocationManager.h */,
@@ -282,6 +290,7 @@
 			files = (
 				28F561381802EB6A00288DDA /* Images.xcassets in Resources */,
 				28F561271802EB6A00288DDA /* InfoPlist.strings in Resources */,
+				285171FB180C7EF200919322 /* DVFNotificationTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -331,6 +340,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				285171F9180C7EC600919322 /* DVFNotificationTableViewCell.m in Sources */,
 				2805CFB718074BCD00BCD74A /* DVFRFC8601DateFormatter.m in Sources */,
 				28FA80C8180407480061AAFA /* DVFLocationManager.m in Sources */,
 				288EFE3C180334F600593F2E /* DVFConstants.m in Sources */,
