@@ -36,6 +36,11 @@
     [self.locationManager startMonitoringSignificantLocationChanges];
 }
 
+- (void)stopSignificantChangeUpdates
+{
+    [self.locationManager stopMonitoringSignificantLocationChanges];
+}
+
 #pragma mark - CLLocationManagerDelegate
 - (void)locationManager:(CLLocationManager *)manager
 	 didUpdateLocations:(NSArray *)locations

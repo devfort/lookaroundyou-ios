@@ -12,5 +12,7 @@
 
 + (NSString *)clientID;
 + (void)setClientID:(NSString *)clientID;
++ (BOOL)trackLocationInBackground;
++ (void)setTrackLocationInBackground:(BOOL)track;
 
 @end

@@ -9,6 +9,9 @@
 #import "Person.h"
 #import "DVFConstants.h"
 
+static NSString * const DVFClientIDKey = @"DVFClientID";
+static NSString * const DVFTrackLocationInBackground = @"DVFTrackLocationInBackground";
+
 @implementation Person
 
 + (NSString *)clientID
@@ -24,7 +27,17 @@
 {
     [[NSUserDefaults standardUserDefaults] setValue:clientID forKey:DVFClientIDKey];
     [[NSUserDefaults standardUserDefaults] synchronize];
+}
 
++ (BOOL)trackLocationInBackground
+{
+    return [[NSUserDefaults standardUserDefaults] boolForKey:DVFTrackLocationInBackground];
+}
+
++ (void)setTrackLocationInBackground:(BOOL)track
+{
+    [[NSUserDefaults standardUserDefaults] setBool:track forKey:DVFTrackLocationInBackground];
+    [[NSUserDefaults standardUserDefaults] synchronize];
 }
 
 @end

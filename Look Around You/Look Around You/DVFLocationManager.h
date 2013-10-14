@@ -12,5 +12,6 @@
 
 + (instancetype)shared;
 - (void)startSignificantChangeUpdates;
+- (void)stopSignificantChangeUpdates;
 
 @end

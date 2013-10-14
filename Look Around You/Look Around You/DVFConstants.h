@@ -6,5 +6,4 @@
 //  Copyright (c) 2013 dev/forst. All rights reserved.
 //
 
-static NSString * const DVFClientIDKey = @"DVFClientID";
 static NSString * const DVFReceivedNotificationKey = @"DVFReceivedNotificationKey";

@@ -13,6 +13,8 @@
 #import "DVFStyle.h"
 #import "DVFConstants.h"
 #import "DVFNotificationTableViewCell.h"
+#import "DVFSettingsViewController.h"
+#import "UIViewController+ModalPresentation.h"
 
 @interface DVFViewController ()
 @property (nonatomic, strong) NSArray *notifications;
@@ -122,7 +124,8 @@ static NSString *CellIdentifier = @"Cell";
 #pragma mark - Buttons
 - (void)didTapSettingsButton:(UIBarButtonItem *)button
 {
-    
+    DVFSettingsViewController *viewController = [[DVFSettingsViewController alloc] init];
+    [self presentNavigationControllerModallyWithViewController:viewController];
 }
 
 @end

@@ -30,7 +30,9 @@
     
     [[UIApplication sharedApplication] registerForRemoteNotificationTypes:UIRemoteNotificationTypeAlert];
     
-    [[DVFLocationManager shared] startSignificantChangeUpdates];
+    if ([Person trackLocationInBackground]) {
+        [[DVFLocationManager shared] startSignificantChangeUpdates];
+    }
     return YES;
 }
 

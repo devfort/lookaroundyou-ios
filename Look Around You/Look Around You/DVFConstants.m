@@ -6,5 +6,4 @@
 //  Copyright (c) 2013 dev/forst. All rights reserved.
 //
 
-extern NSString * const DVFClientIDKey;
 extern NSString * const DVFReceivedNotificationKey;
