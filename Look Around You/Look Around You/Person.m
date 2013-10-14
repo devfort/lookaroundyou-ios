@@ -13,7 +13,11 @@
 
 + (NSString *)clientID
 {
+#if (TARGET_IPHONE_SIMULATOR)
+    return @"b1d28eab-3263-4ce5-8580-b0b11ce663d4";
+#else
     return [[NSUserDefaults standardUserDefaults] stringForKey:DVFClientIDKey];
+#endif
 }
 
 + (void)setClientID:(NSString *)clientID
