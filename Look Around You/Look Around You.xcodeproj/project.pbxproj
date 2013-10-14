@@ -16,6 +16,9 @@
 		28517200180C826500919322 /* DVFSettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 285171FE180C826500919322 /* DVFSettingsViewController.xib */; };
 		28517203180C857000919322 /* DVFLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 28517202180C857000919322 /* DVFLabel.m */; };
 		28517208180C865400919322 /* UIViewController+ModalPresentation.m in Sources */ = {isa = PBXBuildFile; fileRef = 28517207180C865400919322 /* UIViewController+ModalPresentation.m */; };
+		2851720D180C8D1900919322 /* DVFNotificationDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2851720B180C8D1900919322 /* DVFNotificationDetailViewController.m */; };
+		2851720E180C8D1900919322 /* DVFNotificationDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2851720C180C8D1900919322 /* DVFNotificationDetailViewController.xib */; };
+		28517210180C913500919322 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2851720F180C913500919322 /* MapKit.framework */; };
 		288EFE3C180334F600593F2E /* DVFConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 288EFE3B180334F600593F2E /* DVFConstants.m */; };
 		28F5611D1802EB6900288DDA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28F5611C1802EB6900288DDA /* Foundation.framework */; };
 		28F5611F1802EB6900288DDA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28F5611E1802EB6900288DDA /* CoreGraphics.framework */; };
@@ -23,7 +26,7 @@
 		28F561271802EB6A00288DDA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 28F561251802EB6A00288DDA /* InfoPlist.strings */; };
 		28F561291802EB6A00288DDA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 28F561281802EB6A00288DDA /* main.m */; };
 		28F5612D1802EB6A00288DDA /* DVFAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 28F5612C1802EB6A00288DDA /* DVFAppDelegate.m */; };
-		28F561361802EB6A00288DDA /* DVFViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28F561351802EB6A00288DDA /* DVFViewController.m */; };
+		28F561361802EB6A00288DDA /* DVFNotificationListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28F561351802EB6A00288DDA /* DVFNotificationListViewController.m */; };
 		28F561381802EB6A00288DDA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28F561371802EB6A00288DDA /* Images.xcassets */; };
 		28F5613F1802EB6A00288DDA /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28F5613E1802EB6A00288DDA /* XCTest.framework */; };
 		28F561401802EB6A00288DDA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28F5611C1802EB6900288DDA /* Foundation.framework */; };
@@ -63,6 +66,10 @@
 		28517202180C857000919322 /* DVFLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DVFLabel.m; sourceTree = "<group>"; };
 		28517206180C865400919322 /* UIViewController+ModalPresentation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+ModalPresentation.h"; sourceTree = "<group>"; };
 		28517207180C865400919322 /* UIViewController+ModalPresentation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+ModalPresentation.m"; sourceTree = "<group>"; };
+		2851720A180C8D1900919322 /* DVFNotificationDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVFNotificationDetailViewController.h; sourceTree = "<group>"; };
+		2851720B180C8D1900919322 /* DVFNotificationDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DVFNotificationDetailViewController.m; sourceTree = "<group>"; };
+		2851720C180C8D1900919322 /* DVFNotificationDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DVFNotificationDetailViewController.xib; sourceTree = "<group>"; };
+		2851720F180C913500919322 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		288EFE3A180334F600593F2E /* DVFConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVFConstants.h; sourceTree = "<group>"; };
 		288EFE3B180334F600593F2E /* DVFConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DVFConstants.m; sourceTree = "<group>"; };
 		28F561191802EB6900288DDA /* Look Around You.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Look Around You.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -75,8 +82,8 @@
 		28F5612A1802EB6A00288DDA /* Look Around You-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Look Around You-Prefix.pch"; sourceTree = "<group>"; };
 		28F5612B1802EB6A00288DDA /* DVFAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DVFAppDelegate.h; sourceTree = "<group>"; };
 		28F5612C1802EB6A00288DDA /* DVFAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DVFAppDelegate.m; sourceTree = "<group>"; };
-		28F561341802EB6A00288DDA /* DVFViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DVFViewController.h; sourceTree = "<group>"; };
-		28F561351802EB6A00288DDA /* DVFViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DVFViewController.m; sourceTree = "<group>"; };
+		28F561341802EB6A00288DDA /* DVFNotificationListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DVFNotificationListViewController.h; sourceTree = "<group>"; };
+		28F561351802EB6A00288DDA /* DVFNotificationListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DVFNotificationListViewController.m; sourceTree = "<group>"; };
 		28F561371802EB6A00288DDA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		28F5613D1802EB6A00288DDA /* Look Around YouTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Look Around YouTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		28F5613E1802EB6A00288DDA /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -98,6 +105,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28517210180C913500919322 /* MapKit.framework in Frameworks */,
 				28F5611F1802EB6900288DDA /* CoreGraphics.framework in Frameworks */,
 				28F561211802EB6900288DDA /* UIKit.framework in Frameworks */,
 				28F5611D1802EB6900288DDA /* Foundation.framework in Frameworks */,
@@ -168,6 +176,7 @@
 		28F5611B1802EB6900288DDA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2851720F180C913500919322 /* MapKit.framework */,
 				28F5611C1802EB6900288DDA /* Foundation.framework */,
 				28F5611E1802EB6900288DDA /* CoreGraphics.framework */,
 				28F561201802EB6900288DDA /* UIKit.framework */,
@@ -186,11 +195,14 @@
 				288EFE3B180334F600593F2E /* DVFConstants.m */,
 				2805CFB518074BCD00BCD74A /* DVFRFC8601DateFormatter.h */,
 				2805CFB618074BCD00BCD74A /* DVFRFC8601DateFormatter.m */,
-				28F561341802EB6A00288DDA /* DVFViewController.h */,
-				28F561351802EB6A00288DDA /* DVFViewController.m */,
+				28F561341802EB6A00288DDA /* DVFNotificationListViewController.h */,
+				28F561351802EB6A00288DDA /* DVFNotificationListViewController.m */,
 				285171F7180C7EC600919322 /* DVFNotificationTableViewCell.h */,
 				285171F8180C7EC600919322 /* DVFNotificationTableViewCell.m */,
 				285171FA180C7EF200919322 /* DVFNotificationTableViewCell.xib */,
+				2851720A180C8D1900919322 /* DVFNotificationDetailViewController.h */,
+				2851720B180C8D1900919322 /* DVFNotificationDetailViewController.m */,
+				2851720C180C8D1900919322 /* DVFNotificationDetailViewController.xib */,
 				285171FC180C826500919322 /* DVFSettingsViewController.h */,
 				285171FD180C826500919322 /* DVFSettingsViewController.m */,
 				285171FE180C826500919322 /* DVFSettingsViewController.xib */,
@@ -330,6 +342,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2851720E180C8D1900919322 /* DVFNotificationDetailViewController.xib in Resources */,
 				28F561381802EB6A00288DDA /* Images.xcassets in Resources */,
 				28F561271802EB6A00288DDA /* InfoPlist.strings in Resources */,
 				28517200180C826500919322 /* DVFSettingsViewController.xib in Resources */,
@@ -387,12 +400,13 @@
 				2805CFB718074BCD00BCD74A /* DVFRFC8601DateFormatter.m in Sources */,
 				28517208180C865400919322 /* UIViewController+ModalPresentation.m in Sources */,
 				28517203180C857000919322 /* DVFLabel.m in Sources */,
+				2851720D180C8D1900919322 /* DVFNotificationDetailViewController.m in Sources */,
 				28FA80C8180407480061AAFA /* DVFLocationManager.m in Sources */,
 				288EFE3C180334F600593F2E /* DVFConstants.m in Sources */,
 				28F561561802F1AF00288DDA /* Notification.m in Sources */,
 				2805CFBD1807510900BCD74A /* DVFStyle.m in Sources */,
 				28F561291802EB6A00288DDA /* main.m in Sources */,
-				28F561361802EB6A00288DDA /* DVFViewController.m in Sources */,
+				28F561361802EB6A00288DDA /* DVFNotificationListViewController.m in Sources */,
 				2805CFBA18074F3B00BCD74A /* Person.m in Sources */,
 				28FA80C4180374280061AAFA /* DVFLookAroundYouAPIClient.m in Sources */,
 				285171FF180C826500919322 /* DVFSettingsViewController.m in Sources */,

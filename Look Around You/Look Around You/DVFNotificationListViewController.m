@@ -6,7 +6,7 @@
 //  Copyright (c) 2013 dev/forst. All rights reserved.
 //
 
-#import "DVFViewController.h"
+#import "DVFNotificationListViewController.h"
 #import "Notification.h"
 #import "DVFLookAroundYouAPIClient.h"
 #import "Person.h"
@@ -15,12 +15,13 @@
 #import "DVFNotificationTableViewCell.h"
 #import "DVFSettingsViewController.h"
 #import "UIViewController+ModalPresentation.h"
+#import "DVFNotificationDetailViewController.h"
 
-@interface DVFViewController ()
+@interface DVFNotificationListViewController ()
 @property (nonatomic, strong) NSArray *notifications;
 @end
 
-@implementation DVFViewController
+@implementation DVFNotificationListViewController
 
 - (id)init
 {
@@ -71,7 +72,7 @@ static NSString *CellIdentifier = @"Cell";
         NSLog(@"Error: %@", error);
         NSLog(@"%@", task.response);
     }];
-    self.notifications = @[[Notification notificationFromJSON:@{@"body": @"Thing thats happening", @"created_at": @"2013-09-29T10:40:15.765"}]];
+    self.notifications = @[[Notification notificationFromJSON:@{@"title": @"ISS", @"body": @"Thing thats happening", @"created_at": @"2013-09-29T10:40:15.765"}]];
 }
 
 - (void)didReceiveRemoteNotification:(NSNotification *)notification
@@ -113,7 +114,9 @@ static NSString *CellIdentifier = @"Cell";
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    //
+    Notification *notification = self.notifications[indexPath.row];
+    DVFNotificationDetailViewController *viewController = [[DVFNotificationDetailViewController alloc] initWithNotification:notification];
+    [self.navigationController pushViewController:viewController animated:YES];
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath

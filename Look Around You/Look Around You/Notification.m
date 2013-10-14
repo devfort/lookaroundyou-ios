@@ -14,7 +14,7 @@
 + (instancetype)notificationFromJSON:(NSDictionary *)json
 {
     Notification *notification = [[self alloc] init];
-//    notification.title = json[@"title"];
+    notification.title = json[@"title"];
     notification.body = json[@"body"];
     notification.date = [[DVFRFC8601DateFormatter shared] dateFromString:json[@"created_at"]];
 //    CLLocationDegrees latitude = [json[@"location"][@"latitude"] floatValue];

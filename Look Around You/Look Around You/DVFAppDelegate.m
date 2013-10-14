@@ -7,7 +7,7 @@
 //
 
 #import "DVFAppDelegate.h"
-#import "DVFViewController.h"
+#import "DVFNotificationListViewController.h"
 #import "DVFConstants.h"
 #import "DVFLookAroundYouAPIClient.h"
 #import "DVFLocationManager.h"
@@ -21,7 +21,7 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     [DVFStyle applyGlobalStyleToWindow:self.window];
     
-    DVFViewController *viewController = [[DVFViewController alloc] init];
+    DVFNotificationListViewController *viewController = [[DVFNotificationListViewController alloc] init];
     
     UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:viewController];
 

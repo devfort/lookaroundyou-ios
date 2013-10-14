@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DVFViewController : UITableViewController
+@interface DVFNotificationListViewController : UITableViewController
 
 @end
